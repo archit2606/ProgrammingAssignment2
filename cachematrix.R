@@ -4,9 +4,9 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-                z <- NULL
-        set <- function(y){
-                x <<- y
+        z <- NULL                       ##defines z is null
+        set <- function(y){             ##a new function is defined in set
+                x <<- y                 
                 z <<- NULL
         }
         get <- function()x
@@ -14,8 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
         getInverse <- function() z 
         list(set = set, get = get, 
              setInverse = setInverse, 
-             getInverse = getInverse)
-
+             getInverse = getInverse)   ##gives the value of inverse matrix
 }
 
 
